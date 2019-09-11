@@ -17,7 +17,8 @@
       "member-access": false,
       "array-type": false,
       "object-literal-sort-keys": false,
-      "arrow-parens": false
+      "arrow-parens": false,
+      "no-debugger": false
   },
   "rulesDirectory": []
 }

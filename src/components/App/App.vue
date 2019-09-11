@@ -6,10 +6,11 @@
     >
       <v-row>
         <v-col cols="12">
+          <topic />
         </v-col>
       </v-row>
     </v-container>
   </v-app>
 </template>
 
-<script lang="ts" src="./App.ts" />
+<script lang="ts" src="./app.ts" />
