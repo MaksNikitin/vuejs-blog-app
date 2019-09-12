@@ -4,11 +4,8 @@ import Topic from "../../models/topic";
 
 @Component
 export default class BlogTopic extends Vue {
-  mounted() {
-    this.$store.dispatch('getTopics');
-  }
-
-  get topics(): Array<Topic> {
-    return this.$store.state.topicModule.topics;
+  get selectedTopic(): Topic {
+    const { topics, selectedTopic } = this.$store.state.topicModule;
+    return topics[selectedTopic];
   }
 }

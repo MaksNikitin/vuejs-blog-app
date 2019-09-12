@@ -1,15 +1,8 @@
 <template>
   <v-app>
-    <v-container 
-      class="fill-height"
-      fluid
-    >
-      <v-row>
-        <v-col cols="12">
-          <topic />
-        </v-col>
-      </v-row>
-    </v-container>
+    <app-drawer />
+    <app-navigation-bar />
+    <topic-carousel />
   </v-app>
 </template>
 

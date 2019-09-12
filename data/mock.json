@@ -1,5 +1,38 @@
 [
-  { "name": "Random Topic", "tags": ["info", "let-me-think"], "posts": { "heading": "Random Post", "text": "test" }},
-  { "name": "Random Topic1", "tags": ["info", "let-me-think"], "posts": { "heading": "Random Post1", "text": "test" }},
-  { "name": "Random Topic2", "tags": ["info", "let-me-think"], "posts": { "heading": "Random Post2", "text": "test" }}
+  {
+    "name": "Random Topic",
+    "tags": [
+      "info",
+      "let-me-think"
+    ],
+    "posts": [{
+      "heading": "Random Post",
+      "text": "test"
+    }, {
+      "heading": "Random Post1",
+      "text": "test"
+    }]
+  },
+  {
+    "name": "Random Topic11",
+    "tags": [
+      "info",
+      "let-me-think"
+    ],
+    "posts": [{
+      "heading": "Random Post12",
+      "text": "test"
+    }]
+  },
+  {
+    "name": "Random Topic22",
+    "tags": [
+      "info",
+      "let-me-think"
+    ],
+    "posts": [{
+      "heading": "Random Post23",
+      "text": "test"
+    }]
+  }
 ]
