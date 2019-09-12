@@ -7,16 +7,28 @@
         flat
         elevation="5"
         class="mb-5"
+        color="primary"
       >
         <v-card-title>{{ item.heading }}</v-card-title>
         <v-card-text>{{ item.text }}</v-card-text>
+        <v-card-actions class="justify-space-around">
+          <v-btn icon>
+            <v-icon>mdi-heart</v-icon>
+          </v-btn>
+          <v-btn icon>
+            <v-icon>mdi-comment</v-icon>
+          </v-btn>
+          <v-btn icon>
+            <v-icon>mdi-share</v-icon>
+          </v-btn>
+        </v-card-actions>
       </v-card>
     </div>
   </v-content>
 </template>
 
-<script lang="ts" src="./blogTopic.ts" />
+<script lang="ts" src="./BlogTopic.ts" />
 
 <style lang="scss" scoped>
-  @import 'blogTopic.scss'
+  @import 'BlogTopic.scss'
 </style>

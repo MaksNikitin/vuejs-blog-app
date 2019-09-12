@@ -1,7 +1,7 @@
 import { Vue, Component } from "vue-property-decorator";
 
 import Topic from "../../models/topic";
-import BlogTopic from "../BlogTopic/blogTopic.vue";
+import BlogTopic from "../BlogTopic/BlogTopic.vue";
 
 @Component({
   components: {

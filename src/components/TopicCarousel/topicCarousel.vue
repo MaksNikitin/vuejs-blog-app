@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-container
-      class="fill-height"
+      class="fill-height content-container"
       fluid
     >
       <v-carousel
@@ -15,7 +15,6 @@
           :key="index"
           reverse-transition="fade-transition"
           transition="fade-transition"
-          
         >
           <blog-topic />
         </v-carousel-item>
@@ -24,4 +23,8 @@
   </v-content>
 </template>
 
-<script lang="ts" src="./topicCarousel.ts" />
+<script lang="ts" src="./TopicCarousel.ts" />
+
+<style lang="scss" scoped>
+  @import 'TopicCarousel.scss'
+</style>

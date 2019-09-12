@@ -24,4 +24,4 @@
   </v-navigation-drawer>
 </template>
 
-<script lang="ts" src="./appDrawer.ts" />
+<script lang="ts" src="./AppDrawer.ts" />

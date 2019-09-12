@@ -8,6 +8,7 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   theme: {
+    dark: false,
     themes: {
       light: {
         primary: colors.indigo.base,

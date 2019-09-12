@@ -6,4 +6,8 @@
   </v-app>
 </template>
 
-<script lang="ts" src="./app.ts" />
+<script lang="ts" src="./App.ts" />
+
+<style lang="scss">
+  @import "App.scss"
+</style>

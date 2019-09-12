@@ -9,4 +9,4 @@
   </v-app-bar>
 </template>
 
-<script lang="ts" src="./appNavigationBar.ts" />
+<script lang="ts" src="./AppNavigationBar.ts" />
