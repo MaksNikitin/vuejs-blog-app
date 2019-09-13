@@ -9,18 +9,53 @@
         class="mb-5"
         color="primary"
       >
-        <v-card-title>{{ item.heading }}</v-card-title>
+        <div class="post-header-container">
+          <div>{{ item.heading }}</div>
+          <div class="post-header-container-subtitle">
+            {{ getDateDiff(index) }}
+            <v-icon
+              v-if="showEditIcon(index)"
+              class="post-header-container-subtitle-icon"
+              color="secondary"
+            >
+              mdi-border-color
+            </v-icon>
+          </div>
+        </div>
+
         <v-card-text>{{ item.text }}</v-card-text>
+
+        <v-divider light />
+
         <v-card-actions class="justify-space-around">
-          <v-btn icon>
-            <v-icon>mdi-heart</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon>mdi-comment</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon>mdi-share</v-icon>
-          </v-btn>
+          <div class="d-flex align-center post-btn pr-1">
+            <v-btn
+              icon
+              color="secondary"
+              :ripple="false"
+            >
+              <v-icon>mdi-heart</v-icon>
+            </v-btn>
+            <div>Like</div>
+          </div>
+          <div class="d-flex align-center post-btn pr-1">
+            <v-btn
+              icon
+              color="secondary"
+            >
+              <v-icon>mdi-comment</v-icon>
+            </v-btn>
+            <div>Comment</div>
+          </div>
+          <div class="d-flex align-center post-btn pr-1">
+            <v-btn
+              icon
+              color="secondary"
+            >
+              <v-icon>mdi-share</v-icon>
+            </v-btn>
+            <div>Share</div>
+          </div>
         </v-card-actions>
       </v-card>
     </div>

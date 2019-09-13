@@ -11,8 +11,8 @@ export default new Vuetify({
     dark: false,
     themes: {
       light: {
-        primary: colors.indigo.base,
-        secondary: colors.indigo.lighten3,
+        primary: '#FFFFFF',
+        secondary: '#B2B6BB',
       },
       dark: {
         primary: colors.indigo.base,

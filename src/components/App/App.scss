@@ -1,3 +1,7 @@
-.theme--dark.v-sheet {
+.theme--dark.v-card {
   color: #000000 !important;
+
+  .v-card__text {
+    color: #000000 !important;
+  }
 }
