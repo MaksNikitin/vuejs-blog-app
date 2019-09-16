@@ -8,6 +8,7 @@
         hide-delimiters
         :value="selectedTopic"
         :continuous="false"
+        height="100%"
         @change="changeSelectedTopic"
       >
         <v-carousel-item

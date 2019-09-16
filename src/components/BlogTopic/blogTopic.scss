@@ -1,16 +1,33 @@
 .content-container {
   width: 30%;
+  padding: 0 !important;
 }
 
-.post-header-container {
-  padding: 16px 16px 8px;
+.post-container {
 
-  &-subtitle {
-    font-size: 12px;
-    
-    &-icon {
-      font-size: 16px !important;
+  .post-header-container {
+    padding: 16px 16px 8px;
+  
+    &-subtitle {
+      font-size: 12px;
+      
+      &-icon {
+        font-size: 16px !important;
+      }
     }
+  }
+}
+
+.post-text-container {
+  display: block;
+  white-space: pre-line;
+  padding: 0 24px 24px;
+  transition: height 5s;
+
+  .expand-btn {
+    color: #1111c1;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 

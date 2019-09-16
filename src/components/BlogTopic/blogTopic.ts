@@ -5,6 +5,9 @@ import Topic from "../../models/topic";
 
 @Component
 export default class BlogTopic extends Vue {
+  characterLimit: number = 200;
+  // isExpanded: boolean = false;
+
   get selectedTopic(): Topic {
     const { topics, selectedTopic } = this.$store.state.topicModule;
     return topics[selectedTopic];
@@ -34,6 +37,14 @@ export default class BlogTopic extends Vue {
     const post = this.selectedTopic.posts[postIndex];
     const diff = moment.duration(moment(post.lastModified).diff(moment(post.created)));
     return diff.asSeconds() !== 0;
+  }
+
+  getTruncatedText(text: string) {
+    return text.substring(0, this.characterLimit);
+  }
+
+  expandText() {
+    // this.isExpanded = true;
   }
 
   private addEndind(count: number) {

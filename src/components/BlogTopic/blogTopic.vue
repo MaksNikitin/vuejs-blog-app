@@ -1,13 +1,14 @@
 <template>
-  <v-content class="mx-auto content-container">
+  <v-content class="mx-auto fill-height align-center content-container">
     <div v-if="selectedTopic">
       <v-card
         v-for="(item, index) in selectedTopic.posts"
         :key="index"
         flat
         elevation="5"
-        class="mb-5"
+        class="mb-5 mt-5 post-container"
         color="primary"
+        min-width="400"
       >
         <div class="post-header-container">
           <div>{{ item.heading }}</div>
@@ -23,7 +24,9 @@
           </div>
         </div>
 
-        <v-card-text>{{ item.text }}</v-card-text>
+        <span class="post-text-container">
+          {{ isExpanded ? item.text : getTruncatedText(item.text) }} <span v-if="item.text.length > characterLimit" class="expand-btn" @click="expandText">More</span>
+        </span>
 
         <v-divider light />
 
