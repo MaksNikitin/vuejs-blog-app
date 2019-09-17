@@ -35,7 +35,7 @@ export default {
       context.commit(mutationTypes.GET_TOPICS_REQUEST);
 
       try {
-        const response = await fetch('./data/mock.json');
+        const response = await fetch('./data/topics-mock.json');
         const payload = await response.json();
         context.commit(mutationTypes.GET_TOPICS_REQUEST_SUCCESS, payload);
       } catch (err) {

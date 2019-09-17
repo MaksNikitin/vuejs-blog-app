@@ -11,6 +11,7 @@ import BlogTopic from "../BlogTopic/BlogTopic.vue";
 export default class TopicCarousel extends Vue {
   mounted() {
     this.$store.dispatch('getTopics');
+    this.$store.dispatch('getTags');
   }
 
   get topics(): Array<Topic> {

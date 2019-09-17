@@ -2,8 +2,13 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 import moment from "moment";
 
 import Post from "../../models/post";
+import TagList from "../TagList/TagList.vue";
 
-@Component
+@Component({
+  components: {
+    TagList,
+  },
+})
 export default class BlogPost extends Vue {
   @Prop(Object) readonly post: Post;
 

@@ -18,6 +18,7 @@
           mdi-border-color
         </v-icon>
       </div>
+      <tag-list />
     </div>
 
     <span class="post-text-container">

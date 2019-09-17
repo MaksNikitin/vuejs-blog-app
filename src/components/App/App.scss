@@ -5,3 +5,11 @@
     color: #000000 !important;
   }
 }
+
+.v-slide-group__prev, .v-slide-group__next {
+  min-width: 24px !important;
+
+  .v-icon {
+    color: #000000 !important;
+  }
+}
