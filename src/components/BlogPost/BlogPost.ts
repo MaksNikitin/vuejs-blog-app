@@ -38,8 +38,12 @@ export default class BlogPost extends Vue {
     return this.post.text.substring(0, this.characterLimit);
   }
 
+  getRemainedText() {
+    return this.post.text.substring(this.characterLimit);
+  }
+
   expandText() {
-    this.isExpanded = true;
+    this.isExpanded = !this.isExpanded;
   }
 
   private addEndind(count: number) {

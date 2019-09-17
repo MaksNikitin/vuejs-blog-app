@@ -21,7 +21,29 @@
     </div>
 
     <span class="post-text-container">
-      {{ isExpanded ? post.text : getTruncatedText() }} <span v-if="post.text.length > characterLimit && !isExpanded" class="expand-btn" @click="expandText">More</span>
+      {{ getTruncatedText() }}
+      <span
+        :class="{
+          'post-text-container-extended-text-visible': isExpanded,
+          'post-text-container-extended-text': !isExpanded
+        }"
+      >
+        {{ getRemainedText() }}
+      </span>
+      <span
+        v-if="post.text.length > characterLimit && !isExpanded"
+        class="expand-btn"
+        @click="expandText"
+      >
+        More
+      </span>
+      <span
+        v-if="isExpanded"
+        class="expand-btn collapse-btn"
+        @click="expandText"
+      >
+        Collapse
+      </span>
     </span>
 
     <v-divider light />

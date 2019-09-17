@@ -1,28 +1,39 @@
-.post-container {
+.post-header-container {
+  padding: 16px 16px 8px;
 
-  .post-header-container {
-    padding: 16px 16px 8px;
-  
-    &-subtitle {
-      font-size: 12px;
-      
-      &-icon {
-        font-size: 16px !important;
-      }
+  &-subtitle {
+    font-size: 12px;
+    
+    &-icon {
+      font-size: 16px !important;
     }
   }
 }
 
 .post-text-container {
   display: block;
-  white-space: pre-line;
-  padding: 0 24px 24px;
-  transition: height 5s;
+  white-space: normal;
+  padding: 16px 24px 24px;
 
   .expand-btn {
     color: #1111c1;
     text-decoration: underline;
     cursor: pointer;
+
+    &.collapse-btn {
+      position: absolute;
+      right: 24px;
+    }
+  }
+
+  &-extended-text {
+    opacity: 0;
+    font-size: 0;
+    transition: opacity .25s, font-size .25s;
+
+    &-visible {
+      transition: opacity .25s, font-size .25s;
+    }
   }
 }
 
