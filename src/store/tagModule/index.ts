@@ -25,7 +25,13 @@ export default {
       state.isFetchFailed = true;
     },
     [mutationTypes.TOGGLE_ACTIVE_TAG](state, selectedTag: Tag) {
-      // state.selectedTopic = selectedTopic;
+      const tagIndex = state.selectedTags.findIndex(t => t.name === selectedTag.name);
+
+      if (tagIndex >= 0) {
+        state.selectedTags.splice(tagIndex, 1);
+      } else {
+        state.selectedTags.push(selectedTag);
+      }
     },
   },
 
@@ -41,7 +47,7 @@ export default {
         context.commit(mutationTypes.GET_TAGS_REQUEST_FAILURE);
       }
     },
-    changeSelectedTag(context, selectedTag: Tag) {
+    toggleSelectedTag(context, selectedTag: Tag) {
       context.commit(mutationTypes.TOGGLE_ACTIVE_TAG, selectedTag);
     },
   },

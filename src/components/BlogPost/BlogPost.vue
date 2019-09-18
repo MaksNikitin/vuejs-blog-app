@@ -18,7 +18,10 @@
           mdi-border-color
         </v-icon>
       </div>
-      <tag-list />
+      <tag-list
+        :tags="post.tags"
+        :selected-tags="selectedTags"
+      />
     </div>
 
     <span class="post-text-container">

@@ -2,9 +2,10 @@
   <v-content class="mx-auto fill-height align-center content-container">
     <div v-if="selectedTopic">
       <blog-post
-        v-for="(item, index) in selectedTopic.posts"
+        v-for="(item, index) in filteredPosts"
         :key="index"
         :post="item"
+        :selected-tags="selectedTags"
       />
     </div>
   </v-content>

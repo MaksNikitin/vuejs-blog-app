@@ -2,6 +2,7 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 import moment from "moment";
 
 import Post from "../../models/post";
+import Tag from "../../models/tag";
 import TagList from "../TagList/TagList.vue";
 
 @Component({
@@ -11,6 +12,7 @@ import TagList from "../TagList/TagList.vue";
 })
 export default class BlogPost extends Vue {
   @Prop(Object) readonly post: Post;
+  @Prop(Array) readonly selectedTags: Array<Tag>;
 
   characterLimit: number = 200;
   isExpanded: boolean = false;

@@ -1,11 +1,15 @@
 <template>
-  <v-chip-group class="pt-1">
+  <v-chip-group
+    class="pt-1"
+    multiple
+    :value="activeTagIndexes"
+  >
     <v-chip
       v-for="(item, index) in tags"
       :key="index"
       :column="false"
       color="accent"
-      active-class="primary--text"
+      @click="toggleTag"
     >
       {{ item.name }}
     </v-chip>
