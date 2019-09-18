@@ -1,0 +1,37 @@
+.post-tags {
+  .v-slide-group__prev {
+    position: absolute;
+    min-width: 24px !important;
+    height: 48px;
+    z-index: 10;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    left: 0;
+  
+    &--disabled {
+      opacity: 0;
+    }
+  
+    .v-icon {
+      color: #000000 !important;
+    }
+  }
+  
+  .v-slide-group__next {
+    position: absolute;
+    min-width: 24px !important;
+    height: 48px;
+    z-index: 10;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    right: 0;
+  
+    &--disabled {
+      opacity: 0;
+    }
+  
+    .v-icon {
+      color: #000000 !important;
+    }
+  }
+}

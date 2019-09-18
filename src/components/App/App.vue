@@ -10,4 +10,5 @@
 
 <style lang="scss">
   @import "App.scss"
+  @import "vuetify-overrides.scss"
 </style>

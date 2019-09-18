@@ -1,6 +1,6 @@
 <template>
   <v-chip-group
-    class="pt-1"
+    class="pt-1 post-tags"
     multiple
     :value="activeTagIndexes"
   >
