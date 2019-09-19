@@ -10,6 +10,7 @@ module.exports = {
     'vue'
   ],
   rules: {
-    "no-trailing-spaces": 0
+    "no-trailing-spaces": 0,
+    "vue/attributes-order" : 0
   }
 }

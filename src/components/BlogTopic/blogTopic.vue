@@ -3,6 +3,7 @@
     <div v-if="selectedTopic">
       <blog-post
         v-for="(item, index) in filteredPosts"
+        :id="item.heading.toLowerCase() + '-' + index"
         :key="index"
         :post="item"
         :selected-tags="selectedTags"

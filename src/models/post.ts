@@ -1,20 +1,20 @@
 import Tag from "./tag";
 
 export default class Post {
-  name: string;
+  heading: string;
   text: string;
   created: string;
   lastModified: string;
   tags: Array<Tag>;
 
   constructor(
-    name: string = '',
+    heading: string = '',
     text: string = '',
     created: string = '',
     lastModified: string = '',
     tags: Array<Tag> = [],
   ) {
-    this.name = name;
+    this.heading = heading;
     this.text = text;
     this.created = created;
     this.lastModified = lastModified;
