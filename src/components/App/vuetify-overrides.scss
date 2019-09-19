@@ -35,3 +35,13 @@
     }
   }
 }
+
+.topic-carousel {
+  .v-window__container, .v-carousel__item {
+    height: 100% !important;
+  }
+
+  .v-window__next, .v-window__prev {
+    position: fixed;
+  }
+}

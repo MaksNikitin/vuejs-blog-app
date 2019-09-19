@@ -9,13 +9,12 @@
         :value="selectedTopicIndex"
         :continuous="false"
         height="100%"
+        class="topic-carousel"
         @change="changeSelectedTopic"
       >
         <v-carousel-item
           v-for="(item, index) in topics"
           :key="index"
-          reverse-transition="fade-transition"
-          transition="fade-transition"
         >
           <blog-topic />
         </v-carousel-item>
