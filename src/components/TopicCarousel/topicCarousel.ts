@@ -4,10 +4,14 @@ import Topic from "../../models/topic";
 import Post from "../../models/post";
 import Tag from "../../models/tag";
 import BlogTopic from "../BlogTopic/BlogTopic.vue";
+import ScrollNavigation from "../ScrollNavigation/ScrollNavigation.vue";
+import SocialMediaBar from "../SocialMediaBar/SocialMediaBar.vue";
 
 @Component({
   components: {
     BlogTopic,
+    ScrollNavigation,
+    SocialMediaBar,
   },
 })
 export default class TopicCarousel extends Vue {

@@ -1,36 +1,3 @@
 .content-container {
   background-color: rgb(250, 251, 252);
 }
-
-.scroll-navigation-container {
-  position: fixed;
-  right: 15%;
-  top: 20%;
-
-  &-header {
-    font-size: 18px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  .scrollactive-item {
-    color: #9e9e9e;
-    font-size: 15px;
-    padding-left: 16px;
-    text-decoration: none;
-    border-left: 2px solid transparent;
-  }
-
-  .active-post-title {
-    color: #1976D2;
-    border-left-color: #1976D2;
-    transition: 0.3s ease-in;
-  }
-}

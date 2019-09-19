@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 const TSLintPlugin = require('tslint-webpack-plugin')
 const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -38,6 +38,12 @@ module.exports = {
         options: {
           appendTsSuffixTo: [/\.vue$/]
         }
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|svg)$/,
